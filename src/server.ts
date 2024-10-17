@@ -12,10 +12,8 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware para parsear JSON
 app.use(express.json());
 
-// Servir archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/generate-recipe', async (req, res) => {

@@ -57,7 +57,6 @@
             sugerenciasDiv.appendChild(div);
         });
 
-        // Añadir opción para agregar ingrediente personalizado
         if (input && !sugerencias.some(s => s.toLowerCase() === input)) {
             const div = document.createElement('div');
             div.textContent = `Añadir "${ingredienteInput.value}"`;
