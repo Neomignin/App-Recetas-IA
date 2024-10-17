@@ -181,7 +181,7 @@ Sugiere una receta coherente y sabrosa utilizando algunos de estos ingredientes:
     function mostrarRecetasAnteriores() {
         recetasAnterioresDiv.innerHTML = '<h2>Recetas Anteriores</h2>';
         recetasAnteriores.forEach((receta, index) => {
-            const recetaResumen = receta.split('\n')[0]; // Asumimos que la primera línea es el título
+            const recetaResumen = receta.split('\n')[0];
             const recetaElemento = document.createElement('div');
             recetaElemento.innerHTML = `<p>${index + 1}. ${recetaResumen} <button class="ver-receta" data-index="${index}">Ver</button></p>`;
             recetasAnterioresDiv.appendChild(recetaElemento);
