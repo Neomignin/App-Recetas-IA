@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Recetas IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>App Recetas IA</h1>
         <div class="input-container">
-            <input type="text" id="ingrediente" placeholder="Ingrese un ingrediente">
-            <div id="sugerencias" class="sugerencias"></div>
+            <label for="ingrediente">Ingrese un ingrediente:</label>
+            <input type="text" id="ingrediente" placeholder="Ej: tomate, pollo, arroz">
+            <div id="sugerencias" class="sugerencias" role="listbox" aria-label="Sugerencias de ingredientes"></div>
         </div>
-        <div id="ingredientes-seleccionados" class="ingredientes-seleccionados"></div>
+        <div id="ingredientes-seleccionados" class="ingredientes-seleccionados" aria-live="polite"></div>
         <button id="generarReceta">Generar Receta</button>
-        <div id="receta" class="receta"></div>
+        <div id="receta" class="receta" aria-live="polite"></div>
         <div id="recetas-anteriores" class="recetas-anteriores"></div>
     </div>
     <script type="module" src="index.js"></script>

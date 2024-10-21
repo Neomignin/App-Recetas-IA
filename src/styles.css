@@ -1,38 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #f5f7fa;
 }
 
 .container {
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 700px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #2c3e50;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 .input-container {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #2980b9;
 }
 
 .sugerencias {
@@ -41,7 +48,8 @@ input {
     left: 0;
     right: 0;
     background-color: white;
-    border: 1px solid #ddd;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-top: none;
     border-radius: 0 0 4px 4px;
     max-height: 200px;
@@ -50,8 +58,9 @@ input {
 }
 
 .sugerencia {
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .sugerencia:hover {
@@ -66,61 +75,70 @@ input {
 }
 
 .ingrediente {
-    background-color: #e0e0e0;
-    padding: 5px 10px;
-    border-radius: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
+    transition: background-color 0.2s;
 }
 
 .eliminar {
     margin-left: 5px;
     cursor: pointer;
-    color: #999;
+    color: white;
+    font-weight: bold;
 }
 
 button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #2ecc71;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #27ae60;
 }
 
 .receta {
-    margin-top: 20px;
+    margin-top: 30px;
     white-space: pre-wrap;
     line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .recetas-anteriores {
-    margin-top: 20px;
+    margin-top: 30px;
     border-top: 1px solid #ddd;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .recetas-anteriores h2 {
     margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: 300;
 }
 
 .ver-receta {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
+    background-color: #3498db;
+    padding: 5px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 .ver-receta:hover {
-    background-color: #45a049;
+    background-color: #2980b9;
 }
